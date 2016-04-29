@@ -1,0 +1,178 @@
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit;
+}
+
+/**
+  * Typography
+  */
+html {
+  font-family: $base-font-family;
+  color: $text-color;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+/**
+ * Responsive type
+ */
+@media screen and (min-width: 400px) {
+  html { font-size: $base-font-size + 1; }
+}
+@media screen and (min-width: 640px) {
+  html { font-size: $base-font-size + 2; }
+}
+@media screen and (min-width: 728px) {
+  html { font-size: $base-font-size + 3; }
+}
+
+strong {
+  font-weight: $bold-font-weight;
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  line-height: $base-line-height;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.7em;
+  text-align: center;
+}
+h4 {
+  font-style: italic;
+}
+h5 {
+  font-size: $small-font-size;
+
+}
+h6 {
+  font-size: $small-font-size;
+  font-style: italic;
+}
+
+h1.logo {
+  font-size: inherit;
+  font-weight: $bold-font-weight;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.mono {
+  font-family: $mono-font-family;
+}
+
+/**
+ * Links
+ */
+a {
+    color: $text-color;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    &:visited {
+        color: darken($text-color, 5%);
+    }
+    &:hover {
+    }
+}
+
+.logo a {
+  border-bottom: none;
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  font-style: italic;
+  > em {
+    font-style: normal;
+  }
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+    text-align: left;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-family: $mono-font-family;
+    font-size: 1rem;
+    text-align: left;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
+}
+code {
+    font-size: 0.9rem;
+    padding: 1px 3px;
+}
+pre {
+    padding: $spacing-unit;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+/**
+ * Tables
+ */
+th, td {
+  padding: $base-font-size / 4;
+}
+
+/**
+ * Clearfix
+ */
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+span.date, span.author {
+  font-family: $mono-font-family;
+  font-size: $small-font-size;
+}

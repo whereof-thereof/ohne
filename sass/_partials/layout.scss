@@ -1,0 +1,72 @@
+blockquote,
+dl,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+pre,
+table,
+ul,
+address {
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+hr {
+    margin: $spacing-unit auto;
+    border: none;
+}
+hr::after {
+    content: "* * *";
+    display: block;
+    font-family: $mono-font-family;
+    text-align: center;
+}
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    padding: $spacing-unit / 2;
+}
+/**
+  * Videos
+  */
+/**
+  * Blockquotes
+  */
+blockquote {
+    padding-left: $spacing-unit;
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+/**
+  * Lists
+  */
+/**
+  * Header
+  */
+h1.logo {
+  margin: $huge-space auto;
+}
+
+/**
+  * Footer
+  */

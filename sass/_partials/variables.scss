@@ -1,0 +1,17 @@
+$base-font-family: 'Source Sans Pro', sans-serif;
+$mono-font-family: 'Source Code Pro', monospace;
+$base-font-size:   17px;
+$base-font-weight: 400;
+$bold-font-weight: 700;
+$base-line-height: 1.6;
+
+$small-font-size:  $base-font-size * 0.875;
+
+$spacing-unit:     30px;
+$huge-space:       $spacing-unit * 3;
+$max-width:        728px;
+
+$text-color:       #333;
+$grey-color:       #9896A4;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
