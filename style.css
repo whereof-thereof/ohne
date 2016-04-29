@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -195,22 +195,44 @@ a:visited {
 /* line 108, sass/_partials/typography.scss */
 blockquote {
   font-style: italic;
+  padding-left: 30px;
 }
 /* line 110, sass/_partials/typography.scss */
 blockquote > em {
   font-style: normal;
 }
+/* line 114, sass/_partials/typography.scss */
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/**
+  * Section breaks
+  */
+/* line 122, sass/_partials/typography.scss */
+hr {
+  margin: 30px auto;
+  border: none;
+}
+
+/* line 126, sass/_partials/typography.scss */
+hr::after {
+  content: "* * *";
+  display: block;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+}
 
 /**
  * Lists
  */
-/* line 118, sass/_partials/typography.scss */
+/* line 136, sass/_partials/typography.scss */
 ul, ol {
   margin-left: 30px;
   text-align: left;
 }
 
-/* line 124, sass/_partials/typography.scss */
+/* line 142, sass/_partials/typography.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
@@ -219,30 +241,30 @@ li > ol {
 /**
  * Code formatting
  */
-/* line 133, sass/_partials/typography.scss */
+/* line 151, sass/_partials/typography.scss */
 pre,
 code {
   font-family: "Source Code Pro", monospace;
   font-size: 1rem;
   text-align: left;
-  border: 1px solid white;
+  border: 1px solid #f6f6f7;
   border-radius: 3px;
   background-color: #eef;
 }
 
-/* line 142, sass/_partials/typography.scss */
+/* line 160, sass/_partials/typography.scss */
 code {
   font-size: 0.9rem;
   padding: 1px 3px;
 }
 
-/* line 146, sass/_partials/typography.scss */
+/* line 164, sass/_partials/typography.scss */
 pre {
   padding: 30px;
   overflow-x: auto;
   white-space: pre-wrap;
 }
-/* line 150, sass/_partials/typography.scss */
+/* line 168, sass/_partials/typography.scss */
 pre > code {
   border: 0;
   padding-right: 0;
@@ -252,7 +274,7 @@ pre > code {
 /**
  * Tables
  */
-/* line 160, sass/_partials/typography.scss */
+/* line 178, sass/_partials/typography.scss */
 th, td {
   padding: 4.25px;
 }
@@ -260,13 +282,18 @@ th, td {
 /**
  * Clearfix
  */
-/* line 175, sass/_partials/typography.scss */
+/* line 193, sass/_partials/typography.scss */
 span.date, span.author {
   font-family: "Source Code Pro", monospace;
   font-size: 14.875px;
 }
 
 /* line 1, sass/_partials/layout.scss */
+body {
+  position: relative;
+}
+
+/* line 5, sass/_partials/layout.scss */
 blockquote,
 dl,
 fieldset,
@@ -290,30 +317,16 @@ address {
   margin-right: auto;
 }
 
-/* line 24, sass/_partials/layout.scss */
+/* line 28, sass/_partials/layout.scss */
 article p {
   text-align: justify;
   text-justify: inter-word;
 }
 
-/* line 30, sass/_partials/layout.scss */
-hr {
-  margin: 30px auto;
-  border: none;
-}
-
-/* line 34, sass/_partials/layout.scss */
-hr::after {
-  content: "* * *";
-  display: block;
-  font-family: "Source Code Pro", monospace;
-  text-align: center;
-}
-
 /**
  * Images
  */
-/* line 43, sass/_partials/layout.scss */
+/* line 38, sass/_partials/layout.scss */
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -324,26 +337,24 @@ img {
   * Videos
   */
 /**
-  * Blockquotes
-  */
-/* line 54, sass/_partials/layout.scss */
-blockquote {
-  padding-left: 30px;
-}
-/* line 56, sass/_partials/layout.scss */
-blockquote > :last-child {
-  margin-bottom: 0;
-}
-
-/**
-  * Lists
-  */
-/**
   * Header
   */
-/* line 66, sass/_partials/layout.scss */
+/* line 51, sass/_partials/layout.scss */
 h1.logo {
   margin: 90px auto;
+}
+
+/* line 55, sass/_partials/layout.scss */
+div.background-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+  font-size: 10vw;
+  color: #f6f6f7;
 }
 
 /**

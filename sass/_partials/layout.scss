@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 blockquote,
 dl,
 fieldset,
@@ -27,16 +31,7 @@ article p {
 }
 
 
-hr {
-    margin: $spacing-unit auto;
-    border: none;
-}
-hr::after {
-    content: "* * *";
-    display: block;
-    font-family: $mono-font-family;
-    text-align: center;
-}
+
 /**
  * Images
  */
@@ -48,24 +43,28 @@ img {
 /**
   * Videos
   */
-/**
-  * Blockquotes
-  */
-blockquote {
-    padding-left: $spacing-unit;
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-/**
-  * Lists
-  */
+
+
 /**
   * Header
   */
 h1.logo {
   margin: $huge-space auto;
 }
+
+div.background-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+  font-size: 10vw;
+  color: $grey-color-light;
+
+}
+
 
 /**
   * Footer

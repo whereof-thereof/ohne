@@ -110,6 +110,24 @@ blockquote {
   > em {
     font-style: normal;
   }
+  padding-left: $spacing-unit;
+  > :last-child {
+      margin-bottom: 0;
+  }
+}
+
+/**
+  * Section breaks
+  */
+hr {
+    margin: $spacing-unit auto;
+    border: none;
+}
+hr::after {
+    content: "* * *";
+    display: block;
+    font-family: $mono-font-family;
+    text-align: center;
 }
 
 /**

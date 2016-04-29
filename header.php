@@ -46,5 +46,10 @@
 					</nav>
 					<!-- /nav -->
 
+					<!-- background text -->
+					<div class="background-text">
+						<span></span>
+					</div>
+
 			</header>
 			<!-- /header -->
