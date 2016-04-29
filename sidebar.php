@@ -1,10 +1,15 @@
-<div id="sidebar">
-<h2 ><?php _e('Categories'); ?></h2>
-<ul >
-<?php wp_list_cats('sort_column=name&optioncount=1&hierarchical=0'); ?>
-</ul>
-<h2 ><?php _e('Archives'); ?></h2>
-<ul >
-<?php wp_get_archives('type=monthly'); ?>
-</ul>
-</div>
+<!-- sidebar -->
+<aside class="sidebar" role="complementary">
+
+	<?php get_template_part('searchform'); ?>
+
+	<div class="sidebar-widget">
+		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
+	</div>
+
+	<div class="sidebar-widget">
+		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
+	</div>
+
+</aside>
+<!-- /sidebar -->
