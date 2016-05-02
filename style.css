@@ -113,14 +113,31 @@ html {
   }
 }
 /* line 42, sass/_partials/typography.scss */
+article p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* line 47, sass/_partials/typography.scss */
 strong {
   font-weight: 700;
+}
+
+/* line 50, sass/_partials/typography.scss */
+sup, sub {
+  font-size: 14.875px;
+}
+
+/* line 54, sass/_partials/typography.scss */
+span.date, span.author, .wp-caption-text {
+  font-family: "Source Code Pro", monospace;
+  font-size: 14.875px;
 }
 
 /**
  * Headings
  */
-/* line 49, sass/_partials/typography.scss */
+/* line 62, sass/_partials/typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
   line-height: 1.6;
@@ -129,35 +146,35 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .1em;
 }
 
-/* line 56, sass/_partials/typography.scss */
+/* line 69, sass/_partials/typography.scss */
 h1 {
   font-size: 2em;
   text-align: center;
 }
 
-/* line 60, sass/_partials/typography.scss */
+/* line 73, sass/_partials/typography.scss */
 h2 {
   font-size: 1.7em;
   text-align: center;
 }
 
-/* line 64, sass/_partials/typography.scss */
+/* line 77, sass/_partials/typography.scss */
 h4 {
   font-style: italic;
 }
 
-/* line 67, sass/_partials/typography.scss */
+/* line 80, sass/_partials/typography.scss */
 h5 {
   font-size: 14.875px;
 }
 
-/* line 71, sass/_partials/typography.scss */
+/* line 84, sass/_partials/typography.scss */
 h6 {
   font-size: 14.875px;
   font-style: italic;
 }
 
-/* line 76, sass/_partials/typography.scss */
+/* line 89, sass/_partials/typography.scss */
 h1.logo {
   font-size: inherit;
   font-weight: 700;
@@ -165,26 +182,21 @@ h1.logo {
   letter-spacing: normal;
 }
 
-/* line 83, sass/_partials/typography.scss */
-.mono {
-  font-family: "Source Code Pro", monospace;
-}
-
 /**
  * Links
  */
-/* line 90, sass/_partials/typography.scss */
+/* line 99, sass/_partials/typography.scss */
 a {
   color: #333;
   text-decoration: none;
   border-bottom: 1px solid;
 }
-/* line 94, sass/_partials/typography.scss */
+/* line 103, sass/_partials/typography.scss */
 a:visited {
   color: #262626;
 }
 
-/* line 101, sass/_partials/typography.scss */
+/* line 110, sass/_partials/typography.scss */
 .logo a {
   border-bottom: none;
 }
@@ -192,16 +204,16 @@ a:visited {
 /**
  * Blockquotes
  */
-/* line 108, sass/_partials/typography.scss */
+/* line 117, sass/_partials/typography.scss */
 blockquote {
   font-style: italic;
   padding-left: 30px;
 }
-/* line 110, sass/_partials/typography.scss */
+/* line 119, sass/_partials/typography.scss */
 blockquote > em {
   font-style: normal;
 }
-/* line 114, sass/_partials/typography.scss */
+/* line 123, sass/_partials/typography.scss */
 blockquote > :last-child {
   margin-bottom: 0;
 }
@@ -209,13 +221,13 @@ blockquote > :last-child {
 /**
   * Section breaks
   */
-/* line 122, sass/_partials/typography.scss */
+/* line 131, sass/_partials/typography.scss */
 hr {
   margin: 30px auto;
   border: none;
 }
 
-/* line 126, sass/_partials/typography.scss */
+/* line 135, sass/_partials/typography.scss */
 hr::after {
   content: "* * *";
   display: block;
@@ -226,13 +238,13 @@ hr::after {
 /**
  * Lists
  */
-/* line 136, sass/_partials/typography.scss */
+/* line 145, sass/_partials/typography.scss */
 ul, ol {
   margin-left: 30px;
   text-align: left;
 }
 
-/* line 142, sass/_partials/typography.scss */
+/* line 150, sass/_partials/typography.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
@@ -241,7 +253,7 @@ li > ol {
 /**
  * Code formatting
  */
-/* line 151, sass/_partials/typography.scss */
+/* line 159, sass/_partials/typography.scss */
 pre,
 code {
   font-family: "Source Code Pro", monospace;
@@ -252,40 +264,23 @@ code {
   background-color: #eef;
 }
 
-/* line 160, sass/_partials/typography.scss */
+/* line 168, sass/_partials/typography.scss */
 code {
   font-size: 0.9rem;
   padding: 1px 3px;
 }
 
-/* line 164, sass/_partials/typography.scss */
+/* line 172, sass/_partials/typography.scss */
 pre {
   padding: 30px;
   overflow-x: auto;
   white-space: pre-wrap;
 }
-/* line 168, sass/_partials/typography.scss */
+/* line 176, sass/_partials/typography.scss */
 pre > code {
   border: 0;
   padding-right: 0;
   padding-left: 0;
-}
-
-/**
- * Tables
- */
-/* line 178, sass/_partials/typography.scss */
-th, td {
-  padding: 4.25px;
-}
-
-/**
- * Clearfix
- */
-/* line 193, sass/_partials/typography.scss */
-span.date, span.author {
-  font-family: "Source Code Pro", monospace;
-  font-size: 14.875px;
 }
 
 /* line 1, sass/_partials/layout.scss */
@@ -294,57 +289,92 @@ body {
 }
 
 /* line 5, sass/_partials/layout.scss */
-blockquote,
-dl,
-fieldset,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ol,
-p,
-pre,
-table,
-ul,
-address {
+article, aside, footer {
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 728px;
+  max-width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* line 28, sass/_partials/layout.scss */
-article p {
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 /**
  * Images
  */
-/* line 38, sass/_partials/layout.scss */
+/* line 17, sass/_partials/layout.scss */
 img {
   max-width: 100%;
+  height: auto;
   vertical-align: middle;
+}
+
+/* line 23, sass/_partials/layout.scss */
+dl.gallery-item {
+  display: inline-block;
+}
+
+/* line 26, sass/_partials/layout.scss */
+dt.gallery-icon {
+  float: left;
+}
+
+/* line 30, sass/_partials/layout.scss */
+.alignleft {
+  float: left;
   padding: 15px;
+}
+
+/* line 34, sass/_partials/layout.scss */
+.alignright {
+  float: right;
+  padding: 15px;
+}
+
+/* line 38, sass/_partials/layout.scss */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+/* line 44, sass/_partials/layout.scss */
+.alignnone {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /**
   * Videos
   */
 /**
+ * Tables
+ */
+/* line 56, sass/_partials/layout.scss */
+th, td {
+  font-family: "Source Code Pro", monospace;
+  font-size: 14.875px;
+  padding: 4.25px;
+  border: 1px solid;
+}
+
+/* line 62, sass/_partials/layout.scss */
+table {
+  margin-bottom: 30px;
+}
+
+/**
+ * Clearfix
+ */
+/**
   * Header
   */
-/* line 51, sass/_partials/layout.scss */
+/* line 81, sass/_partials/layout.scss */
 h1.logo {
   margin: 90px auto;
 }
 
-/* line 55, sass/_partials/layout.scss */
+/* line 85, sass/_partials/layout.scss */
 div.background-text {
   position: absolute;
   top: 0;

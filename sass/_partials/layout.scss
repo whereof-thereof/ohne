@@ -2,47 +2,77 @@ body {
   position: relative;
 }
 
-blockquote,
-dl,
-fieldset,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ol,
-p,
-pre,
-table,
-ul,
-address {
+article, aside, footer {
     padding-left: $spacing-unit / 2;
     padding-right: $spacing-unit / 2;
-    max-width: $max-width;
+    max-width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
-
-article p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-
 
 /**
  * Images
  */
 img {
     max-width: 100%;
+    height: auto;
     vertical-align: middle;
-    padding: $spacing-unit / 2;
 }
+
+dl.gallery-item {
+  display: inline-block;
+}
+dt.gallery-icon {
+  float: left;
+}
+
+.alignleft {
+  float: left;
+  padding: $spacing-unit / 2;
+}
+.alignright {
+  float: right;
+  padding: $spacing-unit / 2;
+}
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+.alignnone {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /**
   * Videos
   */
+
+/**
+ * Tables
+ */
+th, td {
+  font-family: $mono-font-family;
+  font-size: $small-font-size;
+  padding: $base-font-size / 4;
+  border: 1px solid;
+}
+table {
+  margin-bottom: $spacing-unit;
+}
+
+/**
+ * Clearfix
+ */
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
 
 
 /**

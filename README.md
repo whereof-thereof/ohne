@@ -8,5 +8,7 @@ By [@robsafar](https:twitter.com/robsafar). Base theme is [HTML5blank](http://ht
 
 ## Considerations
 
+- Main layout is single-column.
+- Widget areas 1 & 2 correspond to the top and bottom of the page respectively. **(not yet implemented)**
 - Not comment- or social-media-button-friendly.
 - `border-bottom`s are used for links, so not underline-friendly.

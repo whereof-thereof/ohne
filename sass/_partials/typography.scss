@@ -39,8 +39,21 @@ html {
   html { font-size: $base-font-size + 3; }
 }
 
+article p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 strong {
   font-weight: $bold-font-weight;
+}
+sup, sub {
+  font-size: $small-font-size;
+}
+
+span.date, span.author, .wp-caption-text {
+  font-family: $mono-font-family;
+  font-size: $small-font-size;
 }
 
 /**
@@ -78,10 +91,6 @@ h1.logo {
   font-weight: $bold-font-weight;
   text-transform: none;
   letter-spacing: normal;
-}
-
-.mono {
-  font-family: $mono-font-family;
 }
 
 /**
@@ -137,7 +146,6 @@ ul, ol {
     margin-left: $spacing-unit;
     text-align: left;
 }
-
 li {
     > ul,
     > ol {
@@ -170,27 +178,4 @@ pre {
         padding-right: 0;
         padding-left: 0;
     }
-}
-
-/**
- * Tables
- */
-th, td {
-  padding: $base-font-size / 4;
-}
-
-/**
- * Clearfix
- */
-%clearfix {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-span.date, span.author {
-  font-family: $mono-font-family;
-  font-size: $small-font-size;
 }
