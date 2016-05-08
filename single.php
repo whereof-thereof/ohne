@@ -24,7 +24,7 @@
 			<!-- /post title -->
 
 			<!-- post details -->
-			<p><span class="date"><?php the_time('j F Y'); ?></span></p>
+			<p><span class="taxonomy"><?php the_category(', '); ?></span>&nbsp;&nbsp;|&nbsp;&nbsp;<span class="date"><?php the_time('j F Y'); ?></span></p>
 			<!-- /post details -->
 
 			<?php the_content(); // Dynamic Content ?>

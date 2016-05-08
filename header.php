@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
-		<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,300,700,400italic' rel='stylesheet' type='text/css'>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
@@ -39,17 +39,6 @@
 						</a>
 					</h1>
 					<!-- /logo -->
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
-
-					<!-- background text -->
-					<div class="background-text">
-						<span></span>
-					</div>
 
 			</header>
 			<!-- /header -->

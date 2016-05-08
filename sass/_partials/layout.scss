@@ -1,15 +1,16 @@
 body {
   position: relative;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-article, aside, footer {
+article, aside, .footer {
     padding-left: $spacing-unit / 2;
     padding-right: $spacing-unit / 2;
-    max-width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
 }
+
+
 
 /**
  * Images
@@ -55,7 +56,7 @@ dt.gallery-icon {
  */
 th, td {
   font-family: $mono-font-family;
-  font-size: $small-font-size;
+  font-size: $mono-font-size;
   padding: $base-font-size / 4;
   border: 1px solid;
 }

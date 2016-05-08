@@ -1,17 +1,7 @@
 /**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit;
-}
-
-/**
-  * Typography
+  * Baseline type
   */
-html {
+body {
   font-family: $base-font-family;
   color: $text-color;
   font-size: $base-font-size;
@@ -28,16 +18,16 @@ html {
 
 /**
  * Responsive type
- */
+ *
 @media screen and (min-width: 400px) {
-  html { font-size: $base-font-size + 1; }
+  body { font-size: $base-font-size + 1; }
 }
 @media screen and (min-width: 640px) {
-  html { font-size: $base-font-size + 2; }
+  body { font-size: $base-font-size + 2; }
 }
 @media screen and (min-width: 728px) {
-  html { font-size: $base-font-size + 3; }
-}
+  body { font-size: $base-font-size + 3; }
+} */
 
 article p {
   text-align: justify;
@@ -51,9 +41,17 @@ sup, sub {
   font-size: $small-font-size;
 }
 
-span.date, span.author, .wp-caption-text {
+span.date, span.author, span.taxonomy, .wp-caption-text {
   font-family: $mono-font-family;
-  font-size: $small-font-size;
+  font-size: $mono-font-size;
+}
+span.date, span.taxonomy {
+  text-transform: uppercase;
+}
+
+p {
+  font-size: $base-font-size;
+  margin-bottom: $spacing-unit;
 }
 
 /**
@@ -62,17 +60,23 @@ span.date, span.author, .wp-caption-text {
 h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
   line-height: $base-line-height;
-  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: .1em;
 }
 h1 {
   font-size: 2em;
+  font-weight: 300;
   text-align: center;
+  margin-top: $spacing-unit;
 }
 h2 {
-  font-size: 1.7em;
+  font-size: 1.5em;
+  font-weight: 300;
   text-align: center;
+  margin-top: $spacing-unit;
+}
+h3 {
+  margin-top: $spacing-unit;
 }
 h4 {
   font-style: italic;
@@ -116,6 +120,7 @@ a {
  */
 blockquote {
   font-style: italic;
+  margin-bottom: $spacing-unit;
   > em {
     font-style: normal;
   }
@@ -144,13 +149,27 @@ hr::after {
  */
 ul, ol {
     margin-left: $spacing-unit;
+    margin-bottom: $spacing-unit;
     text-align: left;
+}
+ol {
+  list-style-type: decimal;
+}
+ul {
+  list-style-type: square;
 }
 li {
     > ul,
     > ol {
          margin-bottom: 0;
     }
+}
+.menu ul, .looplist {
+  list-style-type: none;
+}
+.looplist a {
+  border-bottom: none;
+  font-weight: $bold-font-weight;
 }
 
 /**
@@ -159,14 +178,13 @@ li {
 pre,
 code {
     font-family: $mono-font-family;
-    font-size: 1rem;
+    font-size: $mono-font-size;
     text-align: left;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
 }
 code {
-    font-size: 0.9rem;
     padding: 1px 3px;
 }
 pre {

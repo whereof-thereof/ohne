@@ -1,13 +1,14 @@
 $base-font-family: 'Source Sans Pro', sans-serif;
 $mono-font-family: 'Source Code Pro', monospace;
-$base-font-size:   17px;
+$base-font-size:   1.25rem;
 $base-font-weight: 400;
 $bold-font-weight: 700;
 $base-line-height: 1.6;
 
+$mono-font-size:   $base-font-size * 0.95;
 $small-font-size:  $base-font-size * 0.875;
 
-$spacing-unit:     30px;
+$spacing-unit:     $base-font-size * $base-line-height;
 $huge-space:       $spacing-unit * 3;
 $max-width:        728px;
 

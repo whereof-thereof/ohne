@@ -1,21 +1,20 @@
 /*
-Error: Undefined variable: "$spacing-unit".
-        on line 8 of /Applications/XAMPP/xamppfiles/htdocs/rtomar/wp-content/themes/ohne/sass/_partials/typography.scss
+Error: Undefined variable: "$base-font-family".
+        on line 5 of /Applications/XAMPP/xamppfiles/htdocs/rtomar/wp-content/themes/ohne/sass/_partials/typography.scss
 
-3:  *\/
-4: h1, h2, h3, h4, h5, h6,
-5: p, blockquote, pre,
-6: ul, ol, dl, figure,
-7: %vertical-rhythm {
-8:     margin-bottom: $spacing-unit;
-9: }
+1: /**
+2:   * Baseline type
+3:   *\/
+4: body {
+5:   font-family: $base-font-family;
+6:   color: $text-color;
+7:   font-size: $base-font-size;
+8:   font-weight: $base-font-weight;
+9:   line-height: $base-line-height;
 10: 
-11: /**
-12:   * Typography
-13:   *\/
 
 Backtrace:
-/Applications/XAMPP/xamppfiles/htdocs/rtomar/wp-content/themes/ohne/sass/_partials/typography.scss:8
+/Applications/XAMPP/xamppfiles/htdocs/rtomar/wp-content/themes/ohne/sass/_partials/typography.scss:5
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -67,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$spacing-unit\".\A         on line 8 of /Applications/XAMPP/xamppfiles/htdocs/rtomar/wp-content/themes/ohne/sass/_partials/typography.scss\A \A 3:  */\A 4: h1, h2, h3, h4, h5, h6,\A 5: p, blockquote, pre,\A 6: ul, ol, dl, figure,\A 7: %vertical-rhythm {\A 8:     margin-bottom: $spacing-unit;\A 9: }\A 10: \A 11: /**\A 12:   * Typography\A 13:   */"; }
+  content: "Error: Undefined variable: \"$base-font-family\".\A         on line 5 of /Applications/XAMPP/xamppfiles/htdocs/rtomar/wp-content/themes/ohne/sass/_partials/typography.scss\A \A 1: /**\A 2:   * Baseline type\A 3:   */\A 4: body {\A 5:   font-family: $base-font-family;\A 6:   color: $text-color;\A 7:   font-size: $base-font-size;\A 8:   font-weight: $base-font-weight;\A 9:   line-height: $base-line-height;\A 10: "; }
